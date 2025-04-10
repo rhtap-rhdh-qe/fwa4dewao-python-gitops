@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: fwa4dewao-python-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/fwa4dewao-python

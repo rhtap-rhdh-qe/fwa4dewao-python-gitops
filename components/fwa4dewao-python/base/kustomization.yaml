@@ -1,0 +1,12 @@
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomization
+commonLabels:         
+  argocd/app-name: fwa4dewao-python
+  janus-idp.io/tekton: fwa4dewao-python
+  backstage.io/kubernetes-id: fwa4dewao-python
+  backstage.io/kubernetes-namespace: rhtap-app 
+  app.kubernetes.io/part-of: fwa4dewao-python
+resources:
+  - deployment.yaml
+  - route.yaml
+  - service.yaml
